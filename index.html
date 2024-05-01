@@ -1,35 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to My Website</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 40px;
-            background-color: #f4f4f9;
-            color: #333;
-        }
-        header, footer {
-            padding: 1em;
-            color: white;
-            background-color: #007BFF;
-            clear: left;
-            text-align: center;
-        }
-    </style>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>FastEdit: Fast Text-Guided Single-Image Editing via Semantic-Aware Diffusion Fine-Tuning</title>
+    <link href="style.css" rel="stylesheet">
 </head>
+
 <body>
-    <header>
-        <h1>FastEdit: FastText-Guided Single-Image Editing via Semantic-Aware Diffusion Fine-Tuning</h1>
-    </header>
-    <section>
-        <h2>About Me</h2>
-        <p>This is a paragraph about myself. Write something interesting here.</p>
-    </section>
-    <footer>
-        <p>Contact me at <a href="mailto:you@example.com">you@example.com</a>.</p>
-    </footer>
+    <div class="content">
+        <h1><strong>FastEdit: Fast Text-Guided Single-Image Editing via Semantic-Aware Diffusion Fine-Tuning</strong>
+        </h1>
+        <div style="text-align:center;color:#5a6268;">
+            <h2></h2>
+        </div>
+        <p id="authors">
+            Zhi Chen&nbsp;&nbsp;&nbsp;&nbsp;Zecheng Zhao&nbsp;&nbsp;&nbsp;&nbsp;Yadan Luo&nbsp;&nbsp;&nbsp;&nbsp;Zi
+            Huang<br>
+            <span class="affiliation">The University of Queensland</span>
+        </p>
+        <img src="img/teaser-1.png" alt="Teaser Image" style="width:100%; display: block; margin: auto;">
+        <p style="text-align: center; font-style: italic; font-weight: bold; font-size: 18px;">
+            A fast text-guided single-image editing method,
+            accelerating the editing process to only 17 seconds
+        </p>
+        <p style="text-align: center; font-size: 22px;">
+            <a href="" target="_blank" style="margin-right: 100px;">[Paper]</a>
+            <a href="" target="_blank">[Code]</a>
+        </p>
+    </div>
+
+
+
+    <div class="content">
+        <h2 style="text-align:center;">Abstract</h2>
+        <p>Text-guided single-image editing has emerged as a promising solution, which enables users to precisely alter
+            an input image based on the target texts such as making a standing dog appear seated or a bird to spread its
+            wings.
+            While effective, conventional approaches require a two-step process including fine-tuning the target text
+            embedding for over 1K iterations and the generative model for another 1.5K iterations.
+            Although it ensures that the resulting image closely aligns with both the input image and the target text,
+            this process often requires 7 minutes per image, posing a challenge for practical application due to its
+            time-intensive nature.
+            To address this bottleneck, we introduce FastEdit, a fast text-guided single-image editing method with
+            semantic-aware diffusion fine-tuning, dramatically accelerating the editing process to only 17 seconds.
+            FastEdit streamlines the generative model's fine-tuning phase, reducing it from 1.5K to a mere 50
+            iterations.
+            For diffusion fine-tuning, we adopt certain time step values based on the semantic discrepancy between the
+            input image and target text.
+            Furthermore, FastEdit circumvents the initial fine-tuning step by utilizing an image-to-image model that
+            conditions on the feature space, rather than the text embedding space.
+            It can effectively align the target text prompt and input image within the same feature space and save
+            substantial processing time.
+            Additionally, we apply the parameter-efficient fine-tuning technique LoRA to U-net. With LoRA, FastEdit
+            minimizes the model's trainable parameters to only 0.37% of the original size. At the same time, we can
+            achieve comparable editing outcomes with significantly reduced computational overhead. </p>
+    </div>
+
+    <!-- Approach -->
+    <div class="content">
+        <h2>Approach</h2>
+        <p>Our approach to single-image editing optimizes efficiency through <strong>semantic-aware diffusion
+                fine-tuning</strong>,
+            reducing training iterations to just <strong>50</strong> by matching time step values with the semantic
+            discrepancy between
+            the input image and target text. Additionally, we bypass the initial embedding optimization by employing an
+            <strong>image-to-image variant of the Stable Diffusion model</strong>, which utilizes CLIP's image features
+            for enhanced
+            textual and visual feature alignment. Further, we incorporate <strong>Low-Rank Adaptation (LoRA)</strong>,
+            significantly
+            reducing trainable parameters to only <strong>0.37%</strong>, which effectively counters language drift
+            issues common in
+            other techniques and maintains high-quality outcomes.
+        </p>
+        <div style="display: flex; justify-content: space-around; align-items: center;">
+            <img src="img/architecture-1.png" alt="Architecture Diagram" style="max-width: 48%; height: auto;">
+            <img src="img/Algorithm.png" alt="Algorithm Diagram" style="max-width: 48%; height: auto;">
+        </div>
+    </div>
+
+
+    <!-- Results -->
+    <div class="content">
+        <h2>Single-Image Editing Examples</h2>
+        <p>FastEdit allows editing a single image using different target texts, demonstrating its versatility across various image types such as animals, scenes, humans, and paintings.</p>
+        <img src="img/one_to_many-1.png" alt="Editing Examples" style="width:100%; display: block; margin: auto;">
+    </div>
+
+
+    <div class="content">
+        <h2>Comparison with Existing Methods</h2>
+        <p><b>Quantitative Comparison to Baseline Methods</b></p>
+        <p>Compared to other baseline models, our method achieves similar-quality image editing in just 17 seconds.</p>
+        <img src="img\comparsion.png" alt="Comparison" style="width:100%; display: block; margin: auto;">
+        <p><b>Qualitative Comparison to Baseline Methods</b></p>
+        <p>FastEdit demonstrates the successful application of rapid text-based editing on a single real-world image while preserving the original image details</p>
+        <img src="img\comparison-1.png" alt="Comparison" style="width:100%; display: block; margin: auto;">
+    </div>
+
+    <div class="content">
+        <h2>Additional Examples</h2>
+        <p><b>Conditional Feature Interpolation by Increasing 𝜂 Using a Consistent Seed</b></p>
+        <img src="img\vary_eta-1.png" alt="Interpolation" style="width:100%; display: block; margin: auto;">
+        <p><b>Various Editing Options with Random Seeds</b></p>
+        <img src="img\seeds-1.png" alt="Random Seeds" style="width:100%; display: block; margin: auto;">
+        <p><b>Human Face Manipulation</b></p>
+        <img src="img\humanface-1.png" alt="Face Manipulation" style="width:100%; display: block; margin: auto;">
+    </div>
+
+    <!-- BibTex -->
+    <div class="content">
+        <h2>BibTex</h2>
+        <p></p>
+        <!-- Add more references -->
+    </div>
+
 </body>
+
 </html>
