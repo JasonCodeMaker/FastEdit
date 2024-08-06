@@ -1,0 +1,218 @@
+[
+    {
+      "img_name": "dog2_standing.jpg",
+      "target_text": "A photo of a sitting dog"
+    },
+    {
+      "img_name": "dog2_standing.jpg",
+      "target_text": "A photo of a jumping dog."
+    },
+    {
+      "img_name": "dog2_standing.jpg",
+      "target_text": "A photo of a dog laying down."
+    },
+    {
+      "img_name": "dog2_standing.jpg",
+      "target_text": "A photo of a yawning dog."
+    },
+    {
+        "img_name": "dog2_standing.jpg",
+        "target_text": "A photo of a dog standing on a beach."       
+    },       
+    {
+        "img_name": "dog2_standing.jpg",
+        "target_text": "A painting of a dog."       
+    }, 
+    {
+        "img_name": "cat.jpeg",
+        "target_text": "A photo of a cat in a green grass field."       
+    },
+    {
+        "img_name": "cat.jpeg",
+        "target_text": "A photo of a cat laying down."       
+    },
+    {
+        "img_name": "cat.jpeg",
+        "target_text": "A photo of a cat with a hat."       
+    },
+    {
+        "img_name": "dog.png",
+        "target_text": "A photo of a standing corgi dog."       
+    },  
+    {
+        "img_name": "dog.png",
+        "target_text": "A photo of a corgi dog with blue background."       
+    },  
+    {
+        "img_name": "dog.png",
+        "target_text": "A photo of a cat."       
+    }, 
+    {
+        "img_name": "dog.png",
+        "target_text": "A cartoon image of a corgi dog."        
+    },
+    {
+        "img_name": "dog.png",
+        "target_text": "A photo of a corgi dog running on the ground."        
+    },
+    {
+        "img_name": "Meisje_met_de_parel.jpg",
+        "target_text": "A painting of a girl wearing glasses."        
+    },
+    {
+        "img_name": "Meisje_met_de_parel.jpg",
+        "target_text": "A painting of a girl in the style of Vincent Van Gogh."       
+    },  
+    {
+        "img_name": "Meisje_met_de_parel.jpg",
+        "target_text": "A painting of a girl in the style of Leonardo da Vinci."       
+    },  
+    {
+        "img_name": "Meisje_met_de_parel.jpg",
+        "target_text": "A painting of a girl with light background."        
+    },
+    {
+        "img_name": "Meisje_met_de_parel.jpg",
+        "target_text": "A painting of a girl smiling with a big grin."        
+    },
+    {
+        "img_name": "Mona_Lisa.jpg",
+        "target_text": "A painting of Mona Lisa wearing a hat."       
+    }, 
+    {
+        "img_name": "benz.jpg",
+        "target_text": "A photo of a benz car driving on a road"       
+    },
+    {   
+        "img_name": "benz.jpg",
+        "target_text": "A photo of a red benz car."        
+    },
+    {   
+        "img_name": "tiger_2.jpg",
+        "target_text": "A cartoon image of a tiger."        
+    },
+    {   
+        "img_name": "tiger_2.jpg",
+        "target_text": "A photo of a tiger hidding in the jungle."        
+    },
+    {   
+        "img_name": "tiger_2.jpg",
+        "target_text": "A photo of rain falling on the tiger."        
+    },
+    {   
+        "img_name": "tiger_2.jpg",
+        "target_text": "A photo of a ferocious tiger."        
+    },
+    {
+        "img_name": "tiger_2.jpg",
+        "target_text": "A photo of a tiger facing the camera"        
+    },
+    {
+        "img_name": "standing_man.jpg",
+        "target_text": "A photo of a man sitting on the mountain."        
+    },
+    {
+        "img_name": "standing_man.jpg",
+        "target_text": "A photo of a man standing on a mountain with a storm."        
+    },
+    {
+        "img_name": "standing_man.jpg",
+        "target_text": "A photo of a man standing on a mountain with stars on the sky."        
+    },
+    {
+        "img_name": "standing_man.jpg",
+        "target_text": "A photo of a man with snow on the mountain."        
+    },
+    {
+        "img_name": "standing_man.jpg",
+        "target_text": "A photo of a man wearing a shirt standing on a mountain."        
+    },
+    {
+        "img_name": "standing_man.jpg",
+        "target_text": "A photo of a man standing on a mountain at night."        
+    },
+    {
+        "img_name": "standing_man.jpg",
+        "target_text": "A photo of a man standing in a forest."        
+    },
+    {
+        "img_name": "man_beach.jpg",
+        "target_text": "A photo of a man walking on a road"        
+    },
+    {
+        "img_name": "man_beach.jpg",
+        "target_text": "A photo of a man wearing a jacket walking on the beach."        
+    },
+    {
+        "img_name": "man_beach.jpg",
+        "target_text": "A photo of a man walking in the forest"        
+    },
+    {
+        "img_name": "man_beach.jpg",
+        "target_text": "A photo of a man wearing a sunglass walking on the beach"        
+    },
+    {
+        "img_name": "man_beach.jpg",
+        "target_text": "A photo of a man walking on the beach at sunset"        
+    },
+    {   
+        "img_name": "paris.jpg",
+        "target_text": "A photo of a street in paris with snow on the street."
+    },
+    {   
+        "img_name": "paris.jpg",
+        "target_text": "A photo of a empty street in paris with the Eiffel Tower."        
+    },
+    {   
+        "img_name": "paris.jpg",
+        "target_text": "A photo of a man in the center of street in paris with the Eiffel Tower."        
+    },
+    {   
+        "img_name": "paris.jpg",
+        "target_text": "A oil painting of a street in paris with the Eiffel Tower."        
+    },
+    {   
+        "img_name": "paris.jpg",
+        "target_text": "A photo of a street in paris with the Eiffel Tower in cloudy weather."        
+    },
+    {
+        "img_name": "forest.jpg",
+        "target_text": "A photo of a path across the middle of the forest."        
+    },
+    {
+        "img_name": "forest.jpg",
+        "target_text": "A photo of a forest in autumn."        
+    },
+    {
+        "img_name": "forest.jpg",
+        "target_text": "A photo of a forest in winter."        
+    },
+    {
+        "img_name": "forest.jpg",
+        "target_text": "A oil painting of a forest."        
+    },
+    {
+        "img_name": "forest.jpg",
+        "target_text": "A cartoon image of a forest."        
+    },
+    {
+        "img_name": "teddy_1.jpeg",
+        "target_text": "A photo of a fat teddy bear"        
+    },
+    {
+        "img_name": "teddy_1.jpeg",
+        "target_text": "A photo of a thin teddy bear"        
+    },
+    {
+        "img_name": "teddy_1.jpeg",
+        "target_text": "A photo of a standing teddy bear."
+    },
+    {
+        "img_name": "teddy_1.jpeg",
+        "target_text": "A photo of a dancing teddy bear."
+    },
+    {
+        "img_name": "teddy_1.jpeg",
+        "target_text": "A sketch painting of a teddy bear"        
+    }
+]
